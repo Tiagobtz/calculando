@@ -28,13 +28,13 @@ function calcular(){
         numero2 = Number(numero2.value)
         
         if(operacao[0].checked){
-            resultado.innerHTML = `O resultado da soma é ${somar(numero1, numero2)}`
+            resultado.innerHTML = `O resultado da soma é <strong>${somar(numero1, numero2)}</srong>`
         }else if(operacao[1].checked){
-            resultado.innerHTML = `O resultado da soma é ${subtrair(numero1, numero2)}`
+            resultado.innerHTML = `O resultado da subtração é <strong>${subtrair(numero1, numero2)}</strong>`
         }else if(operacao[2].checked){
-            resultado.innerHTML = `O resultado da soma é ${multiplicar(numero1, numero2)}`
+            resultado.innerHTML = `O resultado da multiplicação é <strong>${multiplicar(numero1, numero2)}</srong>`
         }else if(operacao[3].checked){
-            resultado.innerHTML = `O resultado da soma é ${dividir(numero1, numero2)}`
+            resultado.innerHTML = `O resultado da divisão é <strong>${dividir(numero1, numero2)}</strong>`
         }
     }
 }

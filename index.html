@@ -4,31 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/estilo.css">
     <title>Calculadora</title>
 </head>
 <body>
     <section id="calculadora">
-        <h1>Digite os números que deseja calcular</h1>
-        
-        <input type="radio" name="operacao" id="adicao" checked>
-        <label for="adicao">Somar +</label>
-        <br>
-        <input type="radio" name="operacao" id="subtracao">
-        <label for="subtracao">Subtrair -</label>
-        <br>
-        <input type="radio" name="operacao" id="multiplicacao">
-        <label for="multiplicacao">Multiplicar x</label>
-        <br>
-        <input type="radio" name="operacao" id="divisao">
-        <label for="divisao">Dividir /</label>
+        <div id="dados">
+            <h1>Vamos calcular!</h1>
+            
+            <input type="radio" name="operacao" id="adicao" checked>
+            <label for="adicao">Somar +</label>
+            <br>
+            <input type="radio" name="operacao" id="subtracao">
+            <label for="subtracao">Subtrair -</label>
+            <br>
+            <input type="radio" name="operacao" id="multiplicacao">
+            <label for="multiplicacao">Multiplicar x</label>
+            <br>
+            <input type="radio" name="operacao" id="divisao">
+            <label for="divisao">Dividir /</label>
+            <p>Digite um número:</p> <input type="number" name="numero-1" id="numero-1">
+            <br>
+            <p>Digite outro número:</p> <input type="number" name="numero-2" id="numero-2">
+            <input id="botao" type="button" value="Calcular" onclick="calcular()">
+        </div>
 
-        <p>Digite um número:</p> <input type="number" name="numero-1" id="numero-1">
-        <br>
-        <p>Digite outro número:</p> <input type="number" name="numero-2" id="numero-2">
-        <br>
-        <input type="button" value="Calcular" onclick="calcular()">
-
-        <div id="resultado"></div>
+        <div id="painel-do-resultado">
+            <h2>Resultado:</h2>
+            <p id="resultado">...</p>
+        </div>
     </section>
 
     <script src="index.js"></script>
