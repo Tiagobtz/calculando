@@ -5,22 +5,22 @@ function calcular(){
     let resultado = document.getElementById('resultado')
 
     function somar (numero1, numero2){
-    return numero1 + numero2
+        return numero1 + numero2
     }
 
     function subtrair (numero1, numero2){
-    return numero1 - numero2
+        return numero1 - numero2
     }
 
     function multiplicar (numero1, numero2){
-    return numero1 * numero2
+        return numero1 * numero2
     }
 
     function dividir (numero1, numero2){
-    return numero1 / numero2
+        return numero1 / numero2
     }
 
-    if(numero1.value.length == 0 || numero2.value.length == 0 || operacao[false]){
+    if(numero1.value.length == 0 || numero2.value.length == 0){
         alert('[ERRO] Você precisa digitar os números e escolher a operação que deseja calcular.')
     }else{
         
